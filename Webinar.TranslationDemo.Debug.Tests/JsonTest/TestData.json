@@ -1,0 +1,17 @@
+//Estas plantillas se obtienen desde la consola de AWS en configure test events (mecanismo para probar la lambda) con el template: apigateway-aws-proxy
+{
+  "UpdateStockTest": {
+    "body": "[{ \"OfferId\": 15, \"Stock\": 7 }]",
+    "resource": "/{proxy+}",
+    "path": "/api/resourcepath",
+    "httpMethod": "POST",
+    "queryStringParameters": {
+      "culture": "en-US"
+    },
+    "pathParameters": {
+      "cmd": "UpdateStock"
+    },
+    "stageVariables": null,
+    "headers": null
+  }
+}

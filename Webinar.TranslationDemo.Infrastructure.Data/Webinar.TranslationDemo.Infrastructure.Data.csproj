@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.5.4.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Webinar.TranslationDemo.Domain.Entities\Webinar.TranslationDemo.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Webinar.TranslationDemo.Domain\Webinar.TranslationDemo.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
